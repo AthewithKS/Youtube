@@ -1,0 +1,224 @@
+*:focus{
+    outline: none;
+}body{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+}nav{
+padding: 0 16px;
+margin: 0;
+background-color: black;
+display: flex;
+width: 100%;
+height: 54px;
+align-items: center;
+justify-content:space-between;
+position: fixed;
+top: 0;
+
+}
+.logobar{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.navbar{   
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    margin: 0 15px;
+}.navbar:hover{
+    background-color: rgba(255, 255, 255, 0.199);
+    border-radius: 50%;
+}
+.logo{
+    align-items: center;
+    display: inline-flex;
+    color: rgb(180, 173, 173);
+    width: 90px;
+    height: 20px;
+    justify-content: center;
+}.searchmenu{
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-left: 20px;
+}
+.searchbar{
+    text-decoration: none;
+    display: flex ;
+    width: 632px;
+    align-items: center;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid rgb(82, 82, 82);
+    justify-content: space-between;
+
+}.search{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    margin-left:10px ;
+    width: 100%;
+}.searchbutton:hover{
+    background-color: transparent;
+    display: flex;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}.mic{
+    padding: 8px 10px;
+    margin-left:10px ;
+    background-color:rgba(255, 255, 255, 0.199) ;
+    border-radius: 50%;
+}
+.mic:hover{
+    background-color: rgba(145, 144, 144, 0.74);
+    border-radius: 50%;
+}.menu3{
+    height: 40px;
+    width: 140px;
+    display: flex;
+    margin: 0 20px;
+    align-items: center;
+}.create{
+    height: 40px;
+    width: 40px;
+    margin-right: 8px;
+    justify-content: center;
+    display: flex;
+}.create:hover{
+    background-color: rgba(255, 255, 255, 0.199);
+    border-radius: 50%;
+}.notification{
+    height: 40px;
+    width: 40px;
+    margin-right: 8px;
+    justify-content: center;
+    display: flex;
+}.notification:hover{
+    background-color: rgba(255, 255, 255, 0.199);
+    border-radius: 50%;
+}
+/*     sidebar   */
+.sidebar{
+    background-color: black;
+    width: 230px;
+    height: 100vh;
+    position: fixed;
+    padding-left: 10px;
+    margin-right: 5px;
+}.menus a svg{
+    margin:10px 30px ;
+}.menus a{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.menus a:hover {
+    background-color: rgba(99, 99, 99, 0.767); 
+    width: 100%;
+    border-radius: 20px;
+}
+
+.sidebar hr{
+    border: 0;
+    height: 1px;
+    background-color: rgb(128, 128, 128) ;
+}.subscribed svg{
+    width: 20px;
+    margin:10px 30px ;
+}
+.subscribed a{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}.subscribed a:hover{
+    background-color: rgba(99, 99, 99, 0.767); 
+    width: 100%;
+    border-radius: 20px;
+}
+.small-sidebar{
+    width: 80px;
+}
+.small-sidebar a p{
+    display:  none;
+}.small-sidebar h5{
+    display: none;
+}.small-sidebar hr{
+    width: 50%;
+    margin-bottom: 25px;
+}.content{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(0, 0, 0);
+    margin-top: 54px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-evenly;
+    padding:2%;
+    padding-left:230px;
+
+}.large-content{
+    margin-left: 80px;
+    padding-left: 0;
+}.box{
+    width: 340px;
+    height: 220px;
+    margin: 20px;
+    border: 1px white;
+}.channel{
+    display: flex;
+    text-decoration: none;
+    color: white;
+}.channel-icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin:10px 20px;
+
+}.video-info{
+    overflow:hidden;
+}
+
+@media(max-width: 1024px){
+    .searchbar{
+       width: 480px;
+    }
+}@media(max-width: 768px){
+    .searchbar{
+        width: 250px;
+     }.content,.large-content{
+        padding-left: 5%;
+        padding-right: 5%;
+
+     }.mic{
+        display: none;
+     }.create{
+        display: none;
+     }
+}@media(max-width: 320px){
+    .searchbar{
+        width: 150px;
+     }.content,.large-content{
+        padding-left: 5%;
+        padding-right: 5%;
+
+     }.mic{
+        display: none;
+     }.create{
+        display: none;
+     }
+}
